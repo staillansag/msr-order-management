@@ -1,0 +1,1 @@
+docker run --name msr-order-management -dp 15556:5555 --network sag --env-file env_file staillansag/msr-order-management:latest

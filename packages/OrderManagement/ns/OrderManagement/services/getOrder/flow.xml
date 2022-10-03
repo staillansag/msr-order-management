@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT></COMMENT>
 
   <!-- nodes -->
 
@@ -1300,17 +1301,6 @@
                 <value name="form_qualified">false</value>
                 <value name="is_global">false</value>
               </record>
-              <record javaclass="com.wm.util.Values">
-                <value name="node_type">unknown</value>
-                <value name="node_subtype">unknown</value>
-                <value name="is_public">false</value>
-                <value name="field_name">shipmentId</value>
-                <value name="field_type">string</value>
-                <value name="field_dim">0</value>
-                <value name="nillable">true</value>
-                <value name="form_qualified">false</value>
-                <value name="is_global">false</value>
-              </record>
             </array>
             <value name="modifiable">true</value>
           </record>
@@ -1383,9 +1373,6 @@
 </MAPCOPY>
 
 <MAPCOPY FROM="/getOrderByIdOutput;2;0/results;2;1/discountAmount;3.11;0" TO="/order;4;0;OrderManagement.doc:Order/summaryInformation;2;0/discountAmount;3.11;0">
-</MAPCOPY>
-
-<MAPCOPY FROM="/getOrderByIdOutput;2;0/results;2;1/shipmentId;1;0" TO="/order;4;0;OrderManagement.doc:Order/shipmentId;1;0">
 </MAPCOPY>
 </MAP>
 </SEQUENCE>
